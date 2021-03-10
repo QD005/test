@@ -1,0 +1,7 @@
+schedule==0.6.0
+python-dateutil==2.8.1
+python-http-client==3.2.1
+webdriver-manager==3.3.0
+selenium==3.141.0
+instapy==0.6.13
+idna==2.8
