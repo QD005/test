@@ -34,3 +34,4 @@ def login(username, password):
 login("clickhustlers","Backsp@c5")
 time.sleep(3)
 driver.find_element_by_xpath("//*[text()='Not Now']").click()
+print ("Now complete")
