@@ -7,10 +7,10 @@ import time
 gChromeOptions = webdriver.ChromeOptions()
 gChromeOptions.add_argument("window-size=1920x1480")
 gChromeOptions.add_argument("disable-dev-shm-usage")
-#gChromeOptions.add_experimental_option("excludeSwitches", ["enable-automation"])
-#gChromeOptions.add_experimental_option('useAutomationExtension', False)
-#gChromeOptions.add_argument('--disable-blink-features=AutomationControlled')
-#gChromeOptions.add_argument('--profile-directory=Profile 1')
+gChromeOptions.add_experimental_option("excludeSwitches", ["enable-automation"])
+gChromeOptions.add_experimental_option('useAutomationExtension', False)
+gChromeOptions.add_argument('--disable-blink-features=AutomationControlled')
+gChromeOptions.add_argument('--profile-directory=Profile 1')
 #gChromeOptions.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
    
 driver = webdriver.Chrome(
