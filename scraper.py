@@ -22,10 +22,8 @@ driver.implicitly_wait(30)
 def login(username, password):
     
     driver.get('https://www.instagram.com/accounts/login/')
-    try:
-        driver.find_element_by_xpath("//button[text()='Accept']").click()
-    except:
-        pass
+    driver.find_element_by_xpath("//button[text()='Accept']").click()
+    
     driver.find_element_by_name("username").send_keys(username)
     driver.find_element_by_name("password").send_keys(password)
     driver.find_element_by_xpath("//*[text()='Log In']").click()
